@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:note/widget/add_note_bottom_sheert.dart';
 import 'package:note/widget/custom_app_bar.dart';
 import 'package:note/widget/custom_text_filed.dart';
 
