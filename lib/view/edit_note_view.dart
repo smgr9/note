@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note/widget/custom_app_bar.dart';
+import 'package:note/widget/edit_note_view_body.dart';
 
 class EditNoteView extends StatelessWidget {
   const EditNoteView({super.key});
@@ -7,6 +7,8 @@ class EditNoteView extends StatelessWidget {
   static String id = "editNoteViwe";
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: const EditNoteViewBody(),
+    );
   }
 }
