@@ -15,7 +15,7 @@ class _NotesViewBodyState extends State<NotesViewBody> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
-      child: Column(children: [
+      child: Column(children: const [
         SizedBox(height: 30),
         CustomAppBar(),
         Expanded(child: NotesListView()),
