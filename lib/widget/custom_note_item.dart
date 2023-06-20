@@ -19,7 +19,7 @@ class NoteItem extends StatelessWidget {
               "Flutter tips",
               style: TextStyle(
                   color: Colors.black,
-                  fontSize: 26,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold),
             ),
             subtitle: Padding(
@@ -28,7 +28,7 @@ class NoteItem extends StatelessWidget {
                 "Build Your Career With Mohamad Gazer",
                 style: TextStyle(
                   color: Colors.black.withOpacity(0.5),
-                  fontSize: 18,
+                  fontSize: 14,
                 ),
               ),
             ),
@@ -45,7 +45,7 @@ class NoteItem extends StatelessWidget {
               "May ${DateTime.now().day},${DateTime.now().year}",
               style: TextStyle(
                 color: Colors.black.withOpacity(0.4),
-                fontSize: 16,
+                fontSize: 14,
               ),
             ),
           ),
