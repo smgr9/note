@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+// ignore: file_names
+import 'package:flutter/material.dart' show Color;
 
 const String fontPopp = "Poppins";
 const Color kPrimaryColor = Color(0xff62FCD7);
