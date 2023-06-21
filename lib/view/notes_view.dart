@@ -9,28 +9,25 @@ class NoteView extends StatelessWidget {
   static String id = "NoteView";
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => NotesCubit(),
-      child: Scaffold(
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            showModalBottomSheet(
-                isScrollControlled: true,
-                shape: const RoundedRectangleBorder(
-                    borderRadius:
-                        BorderRadius.vertical(top: Radius.circular(10))),
-                context: context,
-                builder: (context) {
-                  return const AddNoteBottomSheet();
-                });
-          },
-          child: Icon(
-            Icons.add,
-            size: 30,
-          ),
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          showModalBottomSheet(
+              isScrollControlled: true,
+              shape: const RoundedRectangleBorder(
+                  borderRadius:
+                      BorderRadius.vertical(top: Radius.circular(10))),
+              context: context,
+              builder: (context) {
+                return const AddNoteBottomSheet();
+              });
+        },
+        child: Icon(
+          Icons.add,
+          size: 30,
         ),
-        body: const NotesViewBody(),
       ),
+      body: const NotesViewBody(),
     );
   }
 }

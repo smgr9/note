@@ -22,16 +22,19 @@ class NotesApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      routes: {
-        NoteView.id: (context) => const NoteView(),
-        EditNoteView.id: (context) => const EditNoteView(),
-      },
-      initialRoute: NoteView.id,
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        fontFamily: fontPopp,
+    return BlocProvider(
+      create: (context) => NotesCubit(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        routes: {
+          NoteView.id: (context) => const NoteView(),
+          EditNoteView.id: (context) => const EditNoteView(),
+        },
+        initialRoute: NoteView.id,
+        theme: ThemeData(
+          brightness: Brightness.dark,
+          fontFamily: fontPopp,
+        ),
       ),
     );
   }
