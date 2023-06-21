@@ -46,11 +46,11 @@ class _AddNoteFormState extends State<AddNoteForm> {
             ),
             ColorsListView(),
             const SizedBox(
-              height: 32,
+              height: 5,
             ),
             customBuilder(),
             const SizedBox(
-              height: 16,
+              height: 32,
             ),
           ],
         ));
