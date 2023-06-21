@@ -2,14 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:note/const/Kconst.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({required this.hint, this.maxline = 1, this.onSaved});
+  const CustomTextField(
+      {required this.hint, this.maxline = 1, this.onSaved, this.onChanged});
   final String hint;
   final int maxline;
   final Function(String?)? onSaved;
+  final Function(String?)? onChanged;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       onSaved: onSaved,
+      onChanged: onChanged,
       validator: (value) {
         if (value?.isEmpty ?? true) {
           return 'Filed is required';
